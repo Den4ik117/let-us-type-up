@@ -1,0 +1,58 @@
+#header {
+  a:hover {
+    color: #C283F3;
+    cursor: pointer;
+  }
+
+  a:active {
+    color: #7943A4;
+  }
+}
+
+#main {
+  button:hover {
+    cursor: pointer;
+    outline: 2px solid #C283F3;
+    outline-offset: 2px;
+  }
+
+  button:active {
+    outline: 2px solid #C283F3;
+    outline-offset: 0;
+    background-color: #7943A4;
+  }
+
+  .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #C283F3;
+  }
+
+  .custom-checkbox:not(:disabled):active+label::before {
+    border-color: #C283F3;
+  }
+
+  .eventsBlock a:hover {
+    color: #7943A4;
+  }
+
+  .eventsBlock a:active {
+    color: #333;
+  }
+
+  input:hover {
+    background-color: #ECECEC;
+  }
+
+  .contactsBlock a:hover {
+    opacity: 0.5;
+  }
+}
+
+#footer {
+  a:hover svg path {
+    fill: #FFF;
+  }
+
+  a:active svg path {
+    fill: #9D5CD0;
+  }
+}

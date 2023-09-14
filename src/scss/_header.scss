@@ -1,0 +1,32 @@
+#header {
+  background: #000;
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+
+  .navbar {
+    padding: 30px 160px;
+    justify-content: space-between;
+
+    .navbar-item {
+      align-items: center;
+      display: flex;
+    }
+
+    .second-navbar {
+      display: inline-flex;
+      gap: 96px;
+    }
+  }
+}

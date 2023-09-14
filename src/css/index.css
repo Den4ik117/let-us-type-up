@@ -1,0 +1,396 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+#header {
+  background: #000;
+}
+#header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#header a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#header .navbar {
+  padding: 30px 160px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#header .navbar .navbar-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#header .navbar .second-navbar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 96px;
+}
+
+.container {
+  padding: 80px 160px;
+}
+
+#main p {
+  color: #333;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 68px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.introBlock {
+  background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash 2.jpg");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  font-weight: 700;
+  color: #fff;
+}
+.introBlock .container {
+  max-width: 579px;
+  padding-top: 8%;
+}
+.introBlock h1 {
+  color: #fff;
+}
+.introBlock p {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+  margin-bottom: 92px;
+  color: #fff !important;
+}
+.introBlock button {
+  border-radius: 100px;
+  background: #9D5CD0;
+  color: #fff;
+  padding: 17px 35px;
+  font-size: 18px;
+}
+
+.infoBlock .container {
+  font-weight: 400;
+}
+.infoBlock .container p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.galleryBlock {
+  background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash 3.jpg");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+}
+.galleryBlock .container > ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.galleryBlock h2 {
+  margin-bottom: 20px;
+  color: #FFF;
+}
+.galleryBlock li {
+  font-weight: 400;
+}
+.galleryBlock .galleryItem {
+  width: 350px;
+}
+.galleryBlock .galleryItem:first-child {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.galleryBlock .gallery {
+  gap: 50px;
+}
+.galleryBlock .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.galleryBlock .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.galleryBlock .custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #FFF;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.galleryBlock .custom-checkbox:checked + label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3ccircle fill='%239D5CD0' cx='4' cy='4' r='3'/%3e%3c/svg%3e");
+  border: 1px solid #9D5CD0;
+}
+
+.catalogBlock h2 {
+  margin-bottom: 16px;
+}
+.catalogBlock p {
+  font-size: 16px;
+  max-width: 1080px;
+}
+.catalogBlock .catalogEl {
+  margin-bottom: 50px;
+}
+.catalogBlock .date {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.catalogBlock .cardList {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 50px;
+}
+.catalogBlock .cardList .cardElement {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.catalogBlock h3 {
+  margin-bottom: 15px;
+}
+.catalogBlock p {
+  margin-top: 15px;
+}
+.catalogBlock img {
+  width: 750px;
+}
+
+.eventsBlock h3 {
+  margin-top: 13px;
+}
+.eventsBlock .cardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  margin-top: 16px;
+}
+.eventsBlock .card {
+  width: 500px;
+  height: 700px;
+  border: 1px solid #CACACA;
+}
+.eventsBlock .cardContainer {
+  width: 400px;
+  height: 338px;
+  margin: 0 auto;
+  margin: 13px 50px 48px 50px;
+  position: relative;
+}
+.eventsBlock .place,
+.eventsBlock .date {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  line-height: normal;
+}
+.eventsBlock .cardText {
+  line-height: 32px;
+  margin-top: 10px;
+}
+.eventsBlock a {
+  color: #9D5CD0;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+}
+
+.projectsBlock h2 {
+  margin-bottom: 16px;
+}
+.projectsBlock p {
+  margin-bottom: 30px;
+  width: 1080px;
+  line-height: 32px;
+}
+.projectsBlock h3 {
+  margin-bottom: 16px;
+}
+.projectsBlock .cardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 34px;
+}
+.projectsBlock .card {
+  padding: 27px;
+  border: 1px solid #CACACA;
+}
+
+.contactsBlock {
+  border: 1px solid #CACACA;
+}
+.contactsBlock .container {
+  padding: 50px 160px;
+}
+.contactsBlock .formList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 79px;
+}
+.contactsBlock .formList > li {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.contactsBlock input {
+  font-size: 16px;
+  width: 270px;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid #333;
+  text-align: start;
+}
+.contactsBlock input[type=text],
+.contactsBlock input[type=tel] {
+  padding-left: 24px;
+}
+.contactsBlock button {
+  width: 325px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #9D5CD0;
+  color: #9D5CD0;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #fff;
+}
+.contactsBlock .inputList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.contactsBlock .iconsList {
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+#footer {
+  background-color: #000;
+}
+#footer .container {
+  padding: 50px 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#footer .footerLinksList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+#header a:hover {
+  color: #C283F3;
+  cursor: pointer;
+}
+#header a:active {
+  color: #7943A4;
+}
+
+#main button:hover {
+  cursor: pointer;
+  outline: 2px solid #C283F3;
+  outline-offset: 2px;
+}
+#main button:active {
+  outline: 2px solid #C283F3;
+  outline-offset: 0;
+  background-color: #7943A4;
+}
+#main .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #C283F3;
+}
+#main .custom-checkbox:not(:disabled):active + label::before {
+  border-color: #C283F3;
+}
+#main .eventsBlock a:hover {
+  color: #7943A4;
+}
+#main .eventsBlock a:active {
+  color: #333;
+}
+#main input:hover {
+  background-color: #ECECEC;
+}
+#main .contactsBlock a:hover {
+  opacity: 0.5;
+}
+
+#footer a:hover svg path {
+  fill: #FFF;
+}
+#footer a:active svg path {
+  fill: #9D5CD0;
+}
