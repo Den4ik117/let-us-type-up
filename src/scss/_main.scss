@@ -3,13 +3,13 @@ $preHeadSize: 48px;
 $descHeadSize: 18px;
 $defaultSize: 16px;
 
-.container {
-  padding: 80px 160px;
-}
-
 #main {
   p {
     color: #333;
+  }
+
+  .container {
+    padding: 80px 160px;
   }
 }
 
@@ -88,6 +88,7 @@ h3 {
   .container {
     >ul {
       display: inline-flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -169,6 +170,7 @@ h3 {
 
   .cardList {
     display: inline-flex;
+    flex-wrap: wrap;
     gap: 50px;
 
     .cardElement {
@@ -196,6 +198,7 @@ h3 {
 
   .cardList {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     margin-top: 16px;
   }
@@ -242,7 +245,7 @@ h3 {
 
   p {
     margin-bottom: 30px;
-    width: 1080px;
+    width: fit-content;
     line-height: 32px;
   }
 
@@ -252,6 +255,7 @@ h3 {
 
   .cardList {
     display: flex;
+    flex-wrap: wrap;
     gap: 34px;
   }
 
@@ -271,6 +275,7 @@ h3 {
 
   .formList {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 79px;
 
@@ -309,12 +314,14 @@ h3 {
 
   .inputList {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
   .iconsList {
     margin-top: 6px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 }

@@ -8,15 +8,20 @@
   text-decoration: none;
 }
 
-#header {
+header {
   background: #000;
 }
-#header ul {
+header .headerContainer {
+  padding: 30px 160px;
+}
+header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-#header a {
+header a {
   color: #fff;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
@@ -24,33 +29,37 @@
   font-weight: 600;
   line-height: normal;
 }
-#header .navbar {
-  padding: 30px 160px;
+header .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#header .navbar .navbar-item {
+header .navbar .navbar-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-#header .navbar .second-navbar {
+header .navbar .second-navbar {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 96px;
-}
-
-.container {
-  padding: 80px 160px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 96px;
+     -moz-column-gap: 96px;
+          column-gap: 96px;
 }
 
 #main p {
   color: #333;
+}
+#main .container {
+  padding: 80px 160px;
 }
 
 h1 {
@@ -122,6 +131,8 @@ h3 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .galleryBlock h2 {
   margin-bottom: 20px;
@@ -199,6 +210,8 @@ h3 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 50px;
 }
 .catalogBlock .cardList .cardElement {
@@ -222,6 +235,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 50px;
   margin-top: 16px;
 }
@@ -260,7 +275,9 @@ h3 {
 }
 .projectsBlock p {
   margin-bottom: 30px;
-  width: 1080px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   line-height: 32px;
 }
 .projectsBlock h3 {
@@ -270,6 +287,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 34px;
 }
 .projectsBlock .card {
@@ -287,6 +306,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -322,6 +343,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 .contactsBlock .iconsList {
@@ -329,13 +352,15 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 
-#footer {
+footer {
   background-color: #000;
 }
-#footer .container {
+footer .container {
   padding: 50px 160px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,7 +369,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#footer .footerLinksList {
+footer .footerLinksList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,4 +418,115 @@ h3 {
 }
 #footer a:active svg path {
   fill: #9D5CD0;
+}
+
+@media screen and (max-width: 1025px) {
+  header .headerContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+  header .headerContainer .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: row dense;
+    row-gap: 24px;
+  }
+  header .headerContainer .navbar :nth-child(2) {
+    grid-column: span 2;
+  }
+  header .headerContainer .navbar :nth-child(3) {
+    justify-self: end;
+  }
+  #main .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #main .introBlock {
+    height: 620px;
+  }
+  #main .introBlock .container {
+    max-width: 660px;
+  }
+  .galleryBlock .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 30px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+  }
+  .galleryBlock .gallery :first-child {
+    grid-column: span 3;
+  }
+  .galleryBlock .galleryItem {
+    width: 275px;
+  }
+  .galleryBlock .galleryItem img {
+    width: 275px;
+  }
+  .catalogBlock .container {
+    padding-bottom: 0 !important;
+  }
+  .catalogBlock .catalogEl:last-child {
+    margin-bottom: 0;
+  }
+  .catalogBlock .cardList {
+    gap: 30px;
+  }
+  .catalogBlock .cardList .cardElement:first-child {
+    width: 924px;
+    height: 579px;
+  }
+  .catalogBlock img {
+    width: 924px;
+    height: 579px;
+  }
+  .eventsBlock .container {
+    padding-bottom: 0px !important;
+  }
+  .eventsBlock .cardList {
+    gap: 27px;
+  }
+  .eventsBlock .card {
+    max-width: 288px;
+    height: 683px;
+  }
+  .eventsBlock .card img {
+    width: 288px;
+    height: 200px;
+  }
+  .eventsBlock .card .cardContainer {
+    margin: 5px 34px 49px 34px;
+    max-width: 222px;
+    height: 420px;
+  }
+  .eventsBlock .card p:first-child {
+    text-align: end;
+  }
+  .eventsBlock .card h3 {
+    margin-top: 4px;
+  }
+  .eventsBlock .card .cardText {
+    margin-top: 5px;
+  }
+  .contactsBlock .formList {
+    gap: 30px;
+  }
+  .contactsBlock input {
+    width: 250px;
+  }
+  footer .container {
+    padding: 40px 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container svg {
+    height: 60px;
+    width: 60px;
+  }
 }
