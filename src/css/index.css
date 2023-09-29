@@ -110,6 +110,8 @@ h3 {
   color: #fff;
   padding: 17px 35px;
   font-size: 18px;
+  width: 314px;
+  height: 70px;
 }
 
 .infoBlock .container {
@@ -148,6 +150,9 @@ h3 {
   display: block;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+.galleryBlock .galleryItem .gallerySelector-list-items {
+  margin-bottom: 14px;
 }
 .galleryBlock .gallery {
   gap: 50px;
@@ -213,6 +218,7 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 50px;
+  max-width: 100%;
 }
 .catalogBlock .cardList .cardElement {
   -ms-flex-item-align: center;
@@ -454,7 +460,7 @@ footer .footerLinksList {
     display: grid !important;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
-    row-gap: 30px;
+    row-gap: 16px;
     -webkit-column-gap: 50px;
        -moz-column-gap: 50px;
             column-gap: 50px;
@@ -528,5 +534,70 @@ footer .footerLinksList {
   footer .container svg {
     height: 60px;
     width: 60px;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .second-navbar {
+    -webkit-column-gap: 44px !important;
+       -moz-column-gap: 44px !important;
+            column-gap: 44px !important;
+  }
+  #main .introBlock .container {
+    max-width: 560px;
+  }
+  .infoBlock h2 {
+    margin-bottom: 14px;
+  }
+  .galleryBlock .gallery {
+    -webkit-column-gap: 34px;
+       -moz-column-gap: 34px;
+            column-gap: 34px;
+  }
+  .galleryBlock .galleryItem {
+    width: 200px;
+  }
+  .galleryBlock .galleryItem img {
+    width: 200px;
+  }
+  .catalogBlock img {
+    width: 668px;
+    height: 419px;
+  }
+  .catalogBlock .cardList {
+    width: 100%;
+  }
+  .catalogBlock .cardList .cardElement:first-child {
+    width: 668px;
+    height: 419px;
+  }
+  .eventsBlock .card {
+    width: 668px;
+    max-width: 668px;
+    height: 528px;
+  }
+  .eventsBlock .card img {
+    width: 668px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .eventsBlock .card .cardContainer {
+    margin: 5px 34px 49px 34px;
+    max-width: 600px;
+    width: 600px;
+    height: 280px;
+  }
+  .eventsBlock .card .cardContainer h3 {
+    max-width: 493px;
+    margin-bottom: 14px;
+  }
+  .projectsBlock .cardList .card img {
+    width: 260px;
+    height: 60px;
+  }
+  .contactsBlock input {
+    width: 297px;
+  }
+  .contactsBlock button {
+    width: 317px;
   }
 }

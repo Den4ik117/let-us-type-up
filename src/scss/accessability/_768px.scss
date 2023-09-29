@@ -1,0 +1,99 @@
+@media screen and (max-width: 769px) {
+  header {
+    .second-navbar {
+      column-gap: 44px !important;
+    }
+  }
+
+  #main {
+    .introBlock {
+      .container {
+        max-width: 560px;
+      }
+    }
+  }
+
+  .infoBlock {
+    h2 {
+      margin-bottom: 14px;
+    }
+  }
+
+  .galleryBlock {
+    .gallery {
+      column-gap: 34px;
+    }
+
+    .galleryItem {
+      width: 200px;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+
+  .catalogBlock {
+    img {
+      width: 668px;
+      height: 419px;
+    }
+
+    .cardList {
+      width: 100%;
+
+      .cardElement:first-child {
+        width: 668px;
+        height: 419px;
+      }
+    }
+  }
+
+  .eventsBlock {
+    .card {
+      width: 668px;
+      max-width: 668px;
+      height: 528px;
+
+      img {
+        width: 668px;
+        object-fit: cover;
+      }
+
+      .cardContainer {
+        margin: 5px 34px 49px 34px;
+        max-width: 600px;
+        width: 600px;
+        height: 280px;
+
+        h3 {
+          max-width: 493px;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  .projectsBlock {
+    .cardList {
+      .card {
+        img {
+          width: 260px;
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  .contactsBlock {
+    input {
+      width: 297px;
+    }
+
+    button {
+      width: 317px;
+    }
+  }
+
+}

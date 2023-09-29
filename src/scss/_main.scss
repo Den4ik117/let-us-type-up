@@ -64,6 +64,8 @@ h3 {
     color: #fff;
     padding: 17px 35px;
     font-size: $descHeadSize;
+    width: 314px;
+    height: 70px;
   }
 }
 
@@ -107,6 +109,10 @@ h3 {
     &:first-child {
       display: block;
       align-self: flex-end;
+    }
+
+    .gallerySelector-list-items {
+      margin-bottom: 14px;
     }
   }
 
@@ -172,6 +178,7 @@ h3 {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 50px;
+    max-width: 100%;
 
     .cardElement {
       align-self: center;
