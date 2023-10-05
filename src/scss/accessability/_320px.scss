@@ -1,0 +1,256 @@
+@media screen and (max-width: 321px) {
+  #header {
+    .headerContainer {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+
+    .navbar {
+      row-gap: 12px;
+      grid-template-columns: 100px 50%;
+
+    }
+
+    .logo {
+      width: 97px;
+    }
+
+    .searchIcon {
+      width: 18px;
+    }
+
+    .second-navbar {
+      column-gap: 24px !important;
+      overflow-x: scroll;
+      white-space: nowrap;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    a {
+      font-size: 12px;
+    }
+
+  }
+
+  #main {
+    h2 {
+      font-size: 28px;
+    }
+
+    .container {
+      padding: 50px 15px;
+    }
+
+    .introBlock {
+      height: auto;
+
+      .container {
+        max-width: 320px;
+        padding: 0;
+
+
+        h1 {
+          font-size: 32px;
+          line-height: 28px;
+          width: 290px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 50px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: normal;
+          font-weight: 400;
+          width: 290px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+        button {
+          width: 200px;
+          height: 40px;
+          font-size: 12px;
+          padding: 0;
+          margin-right: 60px;
+          margin-left: 60px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  .infoBlock {
+    .container {
+      p {
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .galleryBlock {
+    .container>ul {
+      display: block;
+    }
+
+    .galleryItem {
+      width: 290px;
+      height: 290px;
+      padding-bottom: 30px;
+
+      &:last-child {
+        height: auto;
+        padding-bottom: 0;
+      }
+
+      &:first-child {
+        height: auto;
+      }
+
+      img {
+        width: 290px;
+        height: 290px;
+      }
+    }
+
+    .gallerySelector-list {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .custom-checkbox+label::before {
+      width: 12px;
+      height: 12px;
+    }
+
+  }
+
+  .catalogBlock {
+
+    line-height: 32px;
+
+    img {
+      width: 290px;
+      height: 181px;
+    }
+
+    .cardList {
+      width: 100%;
+      gap: 20px;
+
+      .cardElement {
+        &:first-child {
+          width: 290px;
+          height: 181px;
+        }
+      }
+    }
+  }
+
+  .eventsBlock {
+    .card {
+      width: 290px;
+      max-width: 290px;
+      height: 683px;
+
+      img {
+        width: 290px;
+      }
+
+      .cardContainer {
+        max-width: 244px;
+        margin: 17px 18px 49px 23px;
+        height: 413px;
+
+        h3 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .projectsBlock {
+    .cardList {
+      gap: 12px;
+
+      .card {
+        padding: 30px 65px;
+
+        img {
+          width: 160px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .contactsBlock {
+    border: none;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .container {
+      padding-top: 0 !important;
+    }
+
+    input {
+      width: 265px;
+    }
+
+    button {
+      width: 128px;
+      font-size: 12px;
+    }
+
+    .iconsList {
+      margin-top: 7px;
+
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .hidden-on-small-screens {
+      display: none;
+    }
+
+    .visible-on-small-screens {
+      display: block;
+    }
+  }
+
+  footer {
+    .container {
+      padding: 20px 0;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logo {
+      width: 97px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

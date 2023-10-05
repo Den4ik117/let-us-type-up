@@ -1,0 +1,154 @@
+@media screen and (max-width: 1025px) {
+  header {
+    .headerContainer {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 32px;
+      padding-bottom: 24px;
+
+      .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-auto-flow: row dense;
+        row-gap: 24px;
+
+        :nth-child(2) {
+          grid-column: span 2;
+        }
+
+        :nth-child(3) {
+          justify-self: end;
+        }
+      }
+    }
+  }
+
+  #main {
+    .container {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .introBlock {
+      height: 620px;
+
+      .container {
+        max-width: 660px;
+      }
+    }
+  }
+
+  .galleryBlock {
+
+    .container>ul {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+
+      :first-child {
+        grid-column: span 3;
+      }
+
+      row-gap: 16px;
+      column-gap: 50px;
+    }
+
+    .galleryItem {
+      width: 275px;
+
+      img {
+        width: 275px;
+      }
+    }
+  }
+
+  .catalogBlock {
+
+    .container {
+      padding-bottom: 0 !important;
+    }
+
+    .catalogEl:last-child {
+      margin-bottom: 0;
+    }
+
+    .cardList {
+      gap: 30px;
+
+      .cardElement:first-child {
+        width: 924px;
+        height: 579px;
+      }
+    }
+
+    img {
+      width: 924px;
+      height: 579px;
+    }
+
+  }
+
+  .eventsBlock {
+
+    .container {
+      padding-bottom: 0px !important;
+    }
+
+    .cardList {
+      gap: 27px;
+    }
+
+    .card {
+      max-width: 288px;
+      height: 683px;
+
+      img {
+        width: 288px;
+        height: 200px;
+      }
+
+      .cardContainer {
+        margin: 5px 34px 49px 34px;
+        max-width: 222px;
+        height: 420px;
+      }
+
+      p:first-child {
+        text-align: end;
+      }
+
+      h3 {
+        margin-top: 4px;
+      }
+
+      .cardText {
+        margin-top: 5px;
+      }
+
+    }
+  }
+
+  .contactsBlock {
+    .formList {
+      gap: 30px;
+    }
+
+    input {
+      width: 250px;
+    }
+  }
+
+  footer {
+    .container {
+
+      padding: 40px 50px;
+      align-items: center;
+
+      svg {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+}

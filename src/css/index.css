@@ -1,0 +1,799 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background: #000;
+}
+header .headerContainer {
+  padding: 30px 8vw;
+}
+header .navbar {
+  display: grid;
+  grid-auto-flow: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+header .navbar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .navbar .navbar-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .navbar .second-navbar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-column-gap: 5vw;
+     -moz-column-gap: 5vw;
+          column-gap: 5vw;
+  white-space: nowrap;
+}
+
+#main p {
+  color: #333;
+}
+#main .container {
+  padding: 80px 160px;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 68px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.introBlock {
+  background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash 2.jpg");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  font-weight: 700;
+  color: #fff;
+}
+.introBlock .container {
+  max-width: 579px;
+  padding-top: 8%;
+}
+.introBlock h1 {
+  color: #fff;
+}
+.introBlock p {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+  margin-bottom: 92px;
+  color: #fff !important;
+}
+.introBlock button {
+  border-radius: 100px;
+  background: #9D5CD0;
+  color: #fff;
+  padding: 17px 35px;
+  font-size: 18px;
+  width: 314px;
+  height: 70px;
+}
+
+.infoBlock .container {
+  font-weight: 400;
+}
+.infoBlock .container p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.galleryBlock {
+  background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash 3.jpg");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+}
+.galleryBlock .container > ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.galleryBlock h2 {
+  margin-bottom: 20px;
+  color: #FFF;
+}
+.galleryBlock li {
+  font-weight: 400;
+}
+.galleryBlock .galleryItem {
+  width: 350px;
+}
+.galleryBlock .galleryItem:first-child {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.galleryBlock .galleryItem .gallerySelector-list-items {
+  margin-bottom: 14px;
+}
+.galleryBlock .gallery {
+  gap: 50px;
+}
+.galleryBlock .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.galleryBlock .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.galleryBlock .custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #FFF;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.galleryBlock .custom-checkbox:checked + label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3ccircle fill='%239D5CD0' cx='4' cy='4' r='3'/%3e%3c/svg%3e");
+  border: 1px solid #9D5CD0;
+}
+
+.catalogBlock h2 {
+  margin-bottom: 16px;
+}
+.catalogBlock p {
+  font-size: 16px;
+  max-width: 1080px;
+}
+.catalogBlock .catalogEl {
+  margin-bottom: 50px;
+}
+.catalogBlock .date {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.catalogBlock .cardList {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  max-width: 100%;
+}
+.catalogBlock .cardList .cardElement {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.catalogBlock h3 {
+  margin-bottom: 15px;
+}
+.catalogBlock p {
+  margin-top: 15px;
+}
+.catalogBlock img {
+  width: 750px;
+}
+
+.eventsBlock h3 {
+  margin-top: 13px;
+}
+.eventsBlock .cardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 16px;
+}
+.eventsBlock .card {
+  width: 500px;
+  height: 700px;
+  border: 1px solid #CACACA;
+}
+.eventsBlock .cardContainer {
+  width: 400px;
+  height: 338px;
+  margin: 0 auto;
+  margin: 13px 50px 48px 50px;
+  position: relative;
+}
+.eventsBlock .place,
+.eventsBlock .date {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  line-height: normal;
+}
+.eventsBlock .cardText {
+  line-height: 32px;
+  margin-top: 10px;
+}
+.eventsBlock a {
+  color: #9D5CD0;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+}
+
+.projectsBlock h2 {
+  margin-bottom: 16px;
+}
+.projectsBlock p {
+  margin-bottom: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 32px;
+}
+.projectsBlock h3 {
+  margin-bottom: 16px;
+}
+.projectsBlock .cardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 34px;
+}
+.projectsBlock .card {
+  padding: 27px;
+  border: 1px solid #CACACA;
+}
+
+.contactsBlock {
+  border: 1px solid #CACACA;
+}
+.contactsBlock .container {
+  padding: 50px 160px;
+}
+.contactsBlock .formList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 79px;
+}
+.contactsBlock .formList > li {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.contactsBlock input {
+  font-size: 16px;
+  width: 270px;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid #333;
+  text-align: start;
+}
+.contactsBlock input[type=text],
+.contactsBlock input[type=tel] {
+  padding-left: 24px;
+}
+.contactsBlock .visible-on-small-screens {
+  display: none;
+}
+.contactsBlock button {
+  width: 325px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #9D5CD0;
+  color: #9D5CD0;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #fff;
+}
+.contactsBlock .inputList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.contactsBlock .iconsList {
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer {
+  background-color: #000;
+}
+footer .container {
+  padding: 50px 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerLinksList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+#header a:hover {
+  color: #C283F3;
+  cursor: pointer;
+}
+#header a:active {
+  color: #7943A4;
+}
+
+#main button:hover {
+  cursor: pointer;
+  outline: 2px solid #C283F3;
+  outline-offset: 2px;
+}
+#main button:active {
+  outline: 2px solid #C283F3;
+  outline-offset: 0;
+  background-color: #7943A4;
+}
+#main .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #C283F3;
+}
+#main .custom-checkbox:not(:disabled):active + label::before {
+  border-color: #C283F3;
+}
+#main .eventsBlock a:hover {
+  color: #7943A4;
+}
+#main .eventsBlock a:active {
+  color: #333;
+}
+#main input:hover {
+  background-color: #ECECEC;
+}
+#main .contactsBlock a:hover {
+  opacity: 0.5;
+}
+
+#footer a:hover svg path {
+  fill: #FFF;
+}
+#footer a:active svg path {
+  fill: #9D5CD0;
+}
+
+@media screen and (max-width: 1025px) {
+  header .headerContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+  header .headerContainer .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: row dense;
+    row-gap: 24px;
+  }
+  header .headerContainer .navbar :nth-child(2) {
+    grid-column: span 2;
+  }
+  header .headerContainer .navbar :nth-child(3) {
+    justify-self: end;
+  }
+  #main .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #main .introBlock {
+    height: 620px;
+  }
+  #main .introBlock .container {
+    max-width: 660px;
+  }
+  .galleryBlock .container > ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 16px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+  }
+  .galleryBlock .container > ul :first-child {
+    grid-column: span 3;
+  }
+  .galleryBlock .galleryItem {
+    width: 275px;
+  }
+  .galleryBlock .galleryItem img {
+    width: 275px;
+  }
+  .catalogBlock .container {
+    padding-bottom: 0 !important;
+  }
+  .catalogBlock .catalogEl:last-child {
+    margin-bottom: 0;
+  }
+  .catalogBlock .cardList {
+    gap: 30px;
+  }
+  .catalogBlock .cardList .cardElement:first-child {
+    width: 924px;
+    height: 579px;
+  }
+  .catalogBlock img {
+    width: 924px;
+    height: 579px;
+  }
+  .eventsBlock .container {
+    padding-bottom: 0px !important;
+  }
+  .eventsBlock .cardList {
+    gap: 27px;
+  }
+  .eventsBlock .card {
+    max-width: 288px;
+    height: 683px;
+  }
+  .eventsBlock .card img {
+    width: 288px;
+    height: 200px;
+  }
+  .eventsBlock .card .cardContainer {
+    margin: 5px 34px 49px 34px;
+    max-width: 222px;
+    height: 420px;
+  }
+  .eventsBlock .card p:first-child {
+    text-align: end;
+  }
+  .eventsBlock .card h3 {
+    margin-top: 4px;
+  }
+  .eventsBlock .card .cardText {
+    margin-top: 5px;
+  }
+  .contactsBlock .formList {
+    gap: 30px;
+  }
+  .contactsBlock input {
+    width: 250px;
+  }
+  footer .container {
+    padding: 40px 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container svg {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .second-navbar {
+    -webkit-column-gap: 44px !important;
+       -moz-column-gap: 44px !important;
+            column-gap: 44px !important;
+  }
+  #main .introBlock .container {
+    max-width: 560px;
+  }
+  .infoBlock h2 {
+    margin-bottom: 14px;
+  }
+  .galleryBlock .gallery {
+    -webkit-column-gap: 34px;
+       -moz-column-gap: 34px;
+            column-gap: 34px;
+  }
+  .galleryBlock .galleryItem {
+    width: 200px;
+  }
+  .galleryBlock .galleryItem img {
+    width: 200px;
+  }
+  .catalogBlock img {
+    width: 668px;
+    height: 419px;
+  }
+  .catalogBlock .cardList {
+    width: 100%;
+  }
+  .catalogBlock .cardList .cardElement:first-child {
+    width: 668px;
+    height: 419px;
+  }
+  .eventsBlock .card {
+    width: 668px;
+    max-width: 668px;
+    height: 528px;
+  }
+  .eventsBlock .card img {
+    width: 668px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .eventsBlock .card .cardContainer {
+    margin: 5px 34px 49px 34px;
+    max-width: 600px;
+    width: 600px;
+    height: 440px;
+  }
+  .eventsBlock .card .cardContainer h3 {
+    max-width: 493px;
+    margin-bottom: 14px;
+  }
+  .projectsBlock .cardList .card img {
+    width: 260px;
+    height: 60px;
+  }
+  .contactsBlock input {
+    width: 297px;
+  }
+  .contactsBlock button {
+    width: 317px;
+  }
+}
+@media screen and (max-width: 321px) {
+  #header .headerContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+  #header .navbar {
+    row-gap: 12px;
+    grid-template-columns: 100px 50%;
+  }
+  #header .logo {
+    width: 97px;
+  }
+  #header .searchIcon {
+    width: 18px;
+  }
+  #header .second-navbar {
+    -webkit-column-gap: 24px !important;
+       -moz-column-gap: 24px !important;
+            column-gap: 24px !important;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  #header .second-navbar::-webkit-scrollbar {
+    display: none;
+  }
+  #header a {
+    font-size: 12px;
+  }
+  #main h2 {
+    font-size: 28px;
+  }
+  #main .container {
+    padding: 50px 15px;
+  }
+  #main .introBlock {
+    height: auto;
+  }
+  #main .introBlock .container {
+    max-width: 320px;
+    padding: 0;
+  }
+  #main .introBlock .container h1 {
+    font-size: 32px;
+    line-height: 28px;
+    width: 290px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    font-weight: 700;
+  }
+  #main .introBlock .container p {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 400;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #main .introBlock .container button {
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    padding: 0;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
+  .infoBlock .container p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .galleryBlock .container > ul {
+    display: block;
+  }
+  .galleryBlock .galleryItem {
+    width: 290px;
+    height: 290px;
+    padding-bottom: 30px;
+  }
+  .galleryBlock .galleryItem:last-child {
+    height: auto;
+    padding-bottom: 0;
+  }
+  .galleryBlock .galleryItem:first-child {
+    height: auto;
+  }
+  .galleryBlock .galleryItem img {
+    width: 290px;
+    height: 290px;
+  }
+  .galleryBlock .gallerySelector-list {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .galleryBlock .custom-checkbox + label::before {
+    width: 12px;
+    height: 12px;
+  }
+  .catalogBlock {
+    line-height: 32px;
+  }
+  .catalogBlock img {
+    width: 290px;
+    height: 181px;
+  }
+  .catalogBlock .cardList {
+    width: 100%;
+    gap: 20px;
+  }
+  .catalogBlock .cardList .cardElement:first-child {
+    width: 290px;
+    height: 181px;
+  }
+  .eventsBlock .card {
+    width: 290px;
+    max-width: 290px;
+    height: 683px;
+  }
+  .eventsBlock .card img {
+    width: 290px;
+  }
+  .eventsBlock .card .cardContainer {
+    max-width: 244px;
+    margin: 17px 18px 49px 23px;
+    height: 413px;
+  }
+  .eventsBlock .card .cardContainer h3 {
+    margin-bottom: 0;
+  }
+  .projectsBlock .cardList {
+    gap: 12px;
+  }
+  .projectsBlock .cardList .card {
+    padding: 30px 65px;
+  }
+  .projectsBlock .cardList .card img {
+    width: 160px;
+    height: 40px;
+  }
+  .contactsBlock {
+    border: none;
+  }
+  .contactsBlock h3 {
+    font-size: 18px;
+  }
+  .contactsBlock p {
+    font-size: 14px;
+  }
+  .contactsBlock .container {
+    padding-top: 0 !important;
+  }
+  .contactsBlock input {
+    width: 265px;
+  }
+  .contactsBlock button {
+    width: 128px;
+    font-size: 12px;
+  }
+  .contactsBlock .iconsList {
+    margin-top: 7px;
+  }
+  .contactsBlock .iconsList svg {
+    width: 50px;
+    height: 50px;
+  }
+  .contactsBlock .hidden-on-small-screens {
+    display: none;
+  }
+  .contactsBlock .visible-on-small-screens {
+    display: block;
+  }
+  footer .container {
+    padding: 20px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  footer .logo {
+    width: 97px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}

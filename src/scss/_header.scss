@@ -1,0 +1,40 @@
+header {
+  background: #000;
+
+  .headerContainer {
+    padding: 30px 8vw;
+  }
+
+  .navbar {
+    display: grid;
+    grid-auto-flow: column;
+    flex-wrap: wrap;
+  }
+
+  a {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+
+  .navbar {
+    justify-content: space-between;
+
+    .navbar-item {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .second-navbar {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      column-gap: 5vw;
+      white-space: nowrap;
+    }
+  }
+}

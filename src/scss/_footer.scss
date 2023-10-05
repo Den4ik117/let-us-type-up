@@ -1,0 +1,14 @@
+footer {
+  background-color: #000;
+
+  .container {
+    padding: 50px 160px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerLinksList {
+    display: flex;
+    gap: 20px;
+  }
+}
