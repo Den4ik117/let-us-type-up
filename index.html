@@ -18,7 +18,7 @@
         <div class="headerContainer">
             <ul class="navbar">
                 <li class="navbar-item">
-                    <a href="#"><img src="src/img/Лого.png" width="172" alt="Logo"></a>
+                    <a href="#"><img class="logo" src="src/img/Лого.png" width="172" alt="Logo"></a>
                 </li>
                 <li class="navbar-item">
                     <ul class="second-navbar">
@@ -31,7 +31,8 @@
                     </ul>
                 </li>
                 <li class="navbar-item">
-                    <a href="#"><img src="src/img/Search.svg" width="28" height="28" alt="Search"></a>
+                    <a href="#"><img class="searchIcon" src="src/img/Search.svg" width="28" height="28"
+                            alt="Search"></a>
                 </li>
             </ul>
         </div>
@@ -288,7 +289,9 @@
                                         pattern="[0-9()+-\s]*">
                                 </li>
                                 <li>
-                                    <button>Заказать обратный звонок</button>
+                                    <button><span class="hidden-on-small-screens">Заказать обратный звонок</span>
+                                        <span class="visible-on-small-screens">Заказать</span>
+                                    </button>
                                 </li>
                             </ul>
                         </form>
@@ -350,7 +353,7 @@
     <footer id="footer">
         <div class="container">
             <a href="#">
-                <img src="src/img/Лого.png" width="173" alt="Logo">
+                <img src="src/img/Лого.png" class="logo" width="173" alt="Logo">
             </a>
             <ul class="footerLinksList">
                 <li> <a href="#">

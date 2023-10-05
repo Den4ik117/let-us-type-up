@@ -12,12 +12,11 @@ header {
   background: #000;
 }
 header .headerContainer {
-  padding: 30px 160px;
+  padding: 30px 8vw;
 }
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .navbar {
+  display: grid;
+  grid-auto-flow: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -48,11 +47,12 @@ header .navbar .second-navbar {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 96px;
-     -moz-column-gap: 96px;
-          column-gap: 96px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-column-gap: 5vw;
+     -moz-column-gap: 5vw;
+          column-gap: 5vw;
+  white-space: nowrap;
 }
 
 #main p {
@@ -335,6 +335,9 @@ h3 {
 .contactsBlock input[type=tel] {
   padding-left: 24px;
 }
+.contactsBlock .visible-on-small-screens {
+  display: none;
+}
 .contactsBlock button {
   width: 325px;
   height: 50px;
@@ -456,8 +459,8 @@ footer .footerLinksList {
   #main .introBlock .container {
     max-width: 660px;
   }
-  .galleryBlock .gallery {
-    display: grid !important;
+  .galleryBlock .container > ul {
+    display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     row-gap: 16px;
@@ -465,7 +468,7 @@ footer .footerLinksList {
        -moz-column-gap: 50px;
             column-gap: 50px;
   }
-  .galleryBlock .gallery :first-child {
+  .galleryBlock .container > ul :first-child {
     grid-column: span 3;
   }
   .galleryBlock .galleryItem {
@@ -584,7 +587,7 @@ footer .footerLinksList {
     margin: 5px 34px 49px 34px;
     max-width: 600px;
     width: 600px;
-    height: 280px;
+    height: 440px;
   }
   .eventsBlock .card .cardContainer h3 {
     max-width: 493px;
@@ -599,5 +602,198 @@ footer .footerLinksList {
   }
   .contactsBlock button {
     width: 317px;
+  }
+}
+@media screen and (max-width: 321px) {
+  #header .headerContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+  #header .navbar {
+    row-gap: 12px;
+    grid-template-columns: 100px 50%;
+  }
+  #header .logo {
+    width: 97px;
+  }
+  #header .searchIcon {
+    width: 18px;
+  }
+  #header .second-navbar {
+    -webkit-column-gap: 24px !important;
+       -moz-column-gap: 24px !important;
+            column-gap: 24px !important;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  #header .second-navbar::-webkit-scrollbar {
+    display: none;
+  }
+  #header a {
+    font-size: 12px;
+  }
+  #main h2 {
+    font-size: 28px;
+  }
+  #main .container {
+    padding: 50px 15px;
+  }
+  #main .introBlock {
+    height: auto;
+  }
+  #main .introBlock .container {
+    max-width: 320px;
+    padding: 0;
+  }
+  #main .introBlock .container h1 {
+    font-size: 32px;
+    line-height: 28px;
+    width: 290px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    font-weight: 700;
+  }
+  #main .introBlock .container p {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 400;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #main .introBlock .container button {
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    padding: 0;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
+  .infoBlock .container p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .galleryBlock .container > ul {
+    display: block;
+  }
+  .galleryBlock .galleryItem {
+    width: 290px;
+    height: 290px;
+    padding-bottom: 30px;
+  }
+  .galleryBlock .galleryItem:last-child {
+    height: auto;
+    padding-bottom: 0;
+  }
+  .galleryBlock .galleryItem:first-child {
+    height: auto;
+  }
+  .galleryBlock .galleryItem img {
+    width: 290px;
+    height: 290px;
+  }
+  .galleryBlock .gallerySelector-list {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .galleryBlock .custom-checkbox + label::before {
+    width: 12px;
+    height: 12px;
+  }
+  .catalogBlock {
+    line-height: 32px;
+  }
+  .catalogBlock img {
+    width: 290px;
+    height: 181px;
+  }
+  .catalogBlock .cardList {
+    width: 100%;
+    gap: 20px;
+  }
+  .catalogBlock .cardList .cardElement:first-child {
+    width: 290px;
+    height: 181px;
+  }
+  .eventsBlock .card {
+    width: 290px;
+    max-width: 290px;
+    height: 683px;
+  }
+  .eventsBlock .card img {
+    width: 290px;
+  }
+  .eventsBlock .card .cardContainer {
+    max-width: 244px;
+    margin: 17px 18px 49px 23px;
+    height: 413px;
+  }
+  .eventsBlock .card .cardContainer h3 {
+    margin-bottom: 0;
+  }
+  .projectsBlock .cardList {
+    gap: 12px;
+  }
+  .projectsBlock .cardList .card {
+    padding: 30px 65px;
+  }
+  .projectsBlock .cardList .card img {
+    width: 160px;
+    height: 40px;
+  }
+  .contactsBlock {
+    border: none;
+  }
+  .contactsBlock h3 {
+    font-size: 18px;
+  }
+  .contactsBlock p {
+    font-size: 14px;
+  }
+  .contactsBlock .container {
+    padding-top: 0 !important;
+  }
+  .contactsBlock input {
+    width: 265px;
+  }
+  .contactsBlock button {
+    width: 128px;
+    font-size: 12px;
+  }
+  .contactsBlock .iconsList {
+    margin-top: 7px;
+  }
+  .contactsBlock .iconsList svg {
+    width: 50px;
+    height: 50px;
+  }
+  .contactsBlock .hidden-on-small-screens {
+    display: none;
+  }
+  .contactsBlock .visible-on-small-screens {
+    display: block;
+  }
+  footer .container {
+    padding: 20px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  footer .logo {
+    width: 97px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
 }

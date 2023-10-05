@@ -2,11 +2,12 @@ header {
   background: #000;
 
   .headerContainer {
-    padding: 30px 160px;
+    padding: 30px 8vw;
   }
 
-  ul {
-    display: flex;
+  .navbar {
+    display: grid;
+    grid-auto-flow: column;
     flex-wrap: wrap;
   }
 
@@ -31,8 +32,9 @@ header {
 
     .second-navbar {
       display: inline-flex;
-      flex-wrap: wrap;
-      column-gap: 96px;
+      flex-wrap: nowrap;
+      column-gap: 5vw;
+      white-space: nowrap;
     }
   }
 }
